@@ -95,7 +95,7 @@ namespace RobloxDevLauncher
             string player = String.Format("{0}{1}RobloxPlayerBeta.exe", Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), Path.DirectorySeparatorChar);
             if (!File.Exists(player))
             {
-                FailAndClose("No RobloxPlayerBeta in current path" + player);
+                FailAndClose("No RobloxPlayerBeta in current path");
             }
 
             // Launch it
