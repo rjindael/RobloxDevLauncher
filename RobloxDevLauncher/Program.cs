@@ -89,7 +89,7 @@ namespace RobloxDevLauncher
 
             // Create our arguments
             string finalArguments;
-            finalArguments = String.Format("--play -a https://wwww.roblox.com/Login/Negotiate.ashx -t {0} -j {1} -b {2} --launchtime={3} --rloc {4} --gloc {5}", arguments["gameinfo"], HttpUtility.UrlDecode(arguments["placelauncherurl"]), arguments["browsertrackerid"], arguments["launchtime"], arguments["robloxLocale"], arguments["gameLocale"]);
+            finalArguments = String.Format("--play -a https://www.roblox.com/Login/Negotiate.ashx -t {0} -j {1} -b {2} --launchtime={3} --rloc {4} --gloc {5}", arguments["gameinfo"], HttpUtility.UrlDecode(arguments["placelauncherurl"]), arguments["browsertrackerid"], arguments["launchtime"], arguments["robloxLocale"], arguments["gameLocale"]);
 
             // Do we have a RobloxPlayerBeta in our local folder? We need that in order to launch.
             string player = String.Format("{0}{1}RobloxPlayerBeta.exe", Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), Path.DirectorySeparatorChar);
